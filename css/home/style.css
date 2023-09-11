@@ -1,0 +1,313 @@
+/* CSS ปกติ */
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('image/backgroud.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* ทำให้รูปพื้นหลังครอบทั้งหน้า */
+    background-attachment: fixed; /* ทำให้รูปพื้นหลังไม่เลื่อนเมื่อเลื่อนหน้าเว็บ */
+    /* เพิ่มสีพื้นหลังสำรองถ้ารูปไม่สามารถโหลดหรือมีพื้นที่ว่าง */
+    /* background: linear-gradient(180deg, rgb(131, 167, 255) 0%, rgb(169.39, 155.46, 255) 100%); */
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b0c9ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #b0c9ff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    padding: 20px 0;
+    flex-grow: 1;
+}
+
+.banner {
+    background-color: #b0c9ff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.banner-slider {
+    display: flex;
+    width: 200%;
+}
+
+.slide {
+    flex: 0 0 50%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-slider img {
+    width: 100%;
+    height: auto;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+.banner-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b0c9ff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.next-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.next-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        order: 1;
+        margin-top: 20px;
+    }
+
+    .image-section {
+        order: 2;
+    }
+}
+
+/* CSS สำหรับสินค้า */
+.product-container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 30px; /* ระยะห่างระหว่างสินค้า */
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: calc(33.33% - 10px); /* คำนวณขนาดของสินค้าแต่ละชิ้น */
+    margin-bottom: 20px; /* ระยะห่างด้านล่างของสินค้า */
+    background-color: #b0c9ff;
+    /* padding: 0px; */
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+}
+.product a {
+    text-decoration: none; /* เอาเส้นใต้หายไป */
+    color: inherit; /* ใช้สีของเนื้อหาภายใน */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปแบบที่ใช้งานได้ */
+}
+
+.product a:hover {
+    text-decoration: underline; /* เมื่อโฮเวอร์ของเคอร์เซอร์, เอาเส้นใต้เส้นใต้กลับมา */
+}
+
+/* ปุ่มราคาแบบแนวนอน */
+.price-button {
+    /* display: block; */
+    margin: 10px; /* ระยะห่างด้านบนของปุ่มราคา */
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #d2b0ffc5;
+}
+.image-slider img {
+    width: 200px; /* ปรับความกว้าง */
+    height: auto; /* ปรับความสูง */
+    padding: 10px;
+    border-radius: 30px;
+}
+.product-container p {
+    color: red;
+    font-size: 15px;
+    padding: 0px 30px;
+}
+h2 {
+    font-size: 23px;
+    color: #000;
+}
+/* หน้าcheckout */
+main.main-content {
+    background-color: #b0c9ff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px 0px 30px 0px;
+}
+.cart-section h1 {
+    display: flex;
+}
+button.checkout-button {
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 30px;
+    background-color: #d2b0ffc5;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* หน้าabout */
+main.body {
+    background-color: #b0c9ff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    margin: 30px 0px 40px 0px;
+}
+/* หน้าcontact */
+button.content {
+	display: initial;
+    background-color: #709dff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+	padding: 10px;
+	font-weight: bold;
+}
+textarea#message {
+    margin: 10px;
+}
+input#name {
+    background-color: #729fff;
+    margin: 10px;
+}
+input#email {
+    background-color: #729fff;
+    margin: 10px;
+}
+textarea#message{
+    background-color: #729fff;
+    margin: 10px;
+}

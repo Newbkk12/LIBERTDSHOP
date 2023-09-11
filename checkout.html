@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home/style.css">
+    <script src="javascript/home/script.js"></script>
+    <title>ComputerShop-Checkout</title>
+</head>
+<body>
+    <div class="container">
+        <!-- ส่วนหัว -->
+        <header>
+            <img href="home.html" src="image/Logo.gif" alt="โลโก้">
+            <nav>
+                <ul class="menu">
+                    <li><a href="home.html">หน้าหลัก</a></li>
+                    <li><a href="products.html">สินค้า</a></li>
+                    <li><a href="checkout.html">การชำระเงิน</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อสอบถาม</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- จบส่วนหัว -->
+
+        <!-- ส่วนbanner -->
+        <main>
+            <div class="banner">
+                <div class="banner-slider">
+                    <div class="slide">
+                        <img src="image/BannerC.jpg" alt="รูปที่ 1">
+                    </div>
+                </div>
+                <h1>ชำระเงิน</h1>
+                <p>หน้าชำระเงินของนักชอบ คอมพิวเตอร์!!</p>
+            </div>
+        </main>
+        <!-- จบส่วนbanner -->
+
+        <!-- ส่วนเรื่อง -->
+        <main class="main-content">
+            <section class="cart-section">
+                <h1>รถเข็นของคุณ</h1>
+            <div id="cart-items">
+            <!-- รายการสินค้าที่ถูกเพิ่มลงในตะกร้าจะปรากฏที่นี่ -->
+            <div id="cart-items">
+                <!-- รายการสินค้าที่ถูกเพิ่มลงในตะกร้าจะปรากฏที่นี่ -->
+            </div>
+        <p id="empty-cart-message" style="display: none; text-align: center; font-weight: bold; color: red;">
+            ไม่มีสินค้าในตะกร้า กรุณาเลือกผลิตภัณฑ์จากหน้าผลิตภัณฑ์
+        </p>
+    </section>
+    
+            <section class="checkout-section">
+        <h2>ทั้งหมด: <span class="total-price">0.00 บาท</span></h2>
+        <button class="checkout-button">คิดเงิน</button>
+    </section>
+        </main>
+        <!-- จบส่วนเรื่อง -->
+
+        <!-- ส่วนท้าย -->
+        <footer>
+            <p>จัดทำโดย Autsadayut</p>
+        </footer>
+        <!-- จบส่วนท้าย -->
+    </div>
+    <script src="script/localStorage.js"></script>
+    <script src="script/checkout.js"></script>
+</body>
+</html>

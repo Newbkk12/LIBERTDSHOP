@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home/style.css">
+    <script src="javascript/home/script.js"></script>
+    <title>ComputerShop-Products</title>
+</head>
+<body>
+    <div class="container">
+        <!-- ส่วนหัว -->
+        <header>
+            <img href="home.html" src="image/Logo.gif" alt="โลโก้">
+            <nav>
+                <ul class="menu">
+                    <li><a href="home.html">หน้าหลัก</a></li>
+                    <li><a href="products.html">สินค้า</a></li>
+                    <li><a href="checkout.html">การชำระเงิน</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อสอบถาม</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- จบส่วนหัว -->
+
+        <!-- ส่วนbanner -->
+        <main>
+            <div class="banner">
+                <div class="banner-slider">
+                    <div class="slide">
+                        <img src="image/Banner2.jpg" alt="รูปที่ 1">
+                    </div>
+                    <div class="slide">
+                        <img src="image/bannerOder1.jpg" alt="รูปที่ 2">
+                    </div>
+                </div>
+                <div class="banner-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <h1>ComputerShop</h1>
+                <p>ยินดีตอนรับเข้าสู่หน้าร้านค้าขายอุปกรณ์คอมพิวเตอร์</p>
+            </div>
+        </main>
+        <!-- จบส่วนbanner -->
+
+<!-- ส่วนสินค้า -->
+<main>
+    <div class="product-container">
+        <!-- Row 1 -->
+        <div class="product-row" style="align-items: center; justify-content: center;">
+            <!-- Product 1 -->
+            <a href="checkout.html" style="text-decoration: none;">
+                <div class="product" style="width: 350px;height: 400px;">
+                    <div class="image-slider">
+                        <img src="image/Set1/Set1_1.jpg" alt="Product 1 - Image 1">
+                    </div>
+                    <h2>Desktop Acer Aspire</h2>
+                    <p>ฟรี Wireless Keyboard Mouse งบราคา 17,000</p>
+                    <button class="price-button" onclick="goToCheckout(1000)">ราคา: ฿15,900.-</button>
+                </div>
+            </a>
+            <!-- Product 2 -->
+            <a href="checkout.html" style="text-decoration: none;">
+                <div class="product" style="width: 350px;height: 400px;">
+                    <div class="image-slider">
+                        <img src="image/Set2/Set2_1.png" alt="Product 2 - Image 1">
+                </div>
+                    <h2>Desktop Asus ROG Strix</h2>
+                    <p>ฟรี USB Keyboard & Mouse ในกล่อง</p>
+                    <button class="price-button" onclick="goToCheckout(1500)">ราคา: ฿24,600.-</button>
+                </div>
+            </a>    
+            <!-- Product 3 -->
+            <a href="checkout.html" style="text-decoration: none;">
+                <div class="product" style="width: 350px;height: 400px;">
+                    <div class="image-slider">
+                        <img src="image/Set3/Set3_1.png" alt="Product 3 - Image 1">
+                </div>
+                    <h2>Desktop Lenovo Legion</h2>
+                    <p>ฟรี Monitor LENOVO FHD 144Hz</p>
+                    <button class="price-button" onclick="goToCheckout(2000)">ราคา: ฿32,900.-</button>
+                </div>
+            </a>    
+        </div>
+        <!-- Row 2 -->
+        <div class="product-row" style="align-items: center; justify-content: center;">
+            <!-- Product 4 -->
+            <a href="checkout.html" style="text-decoration: none;">  
+                <div class="product" style="width: 350px;height: 400px;">
+                    <div class="image-slider">
+                        <img src="image/Set4/4_1.png" alt="Product 4 - Image 1">
+                </div>
+                    <h2>Mini PC Intel NUC_Celeron</h2>
+                    <p>ฟรี สายชาร์จและฐานวางเครื่อง</p>
+                    <button class="price-button" onclick="goToCheckout(1200)">ราคา: ฿5,990.-</button>
+                </div>
+            </a> 
+            <!-- Product 5 -->
+            <a href="checkout.html" style="text-decoration: none;"> 
+                <div class="product" style="width: 350px;height: 400px;">
+                    <div class="image-slider">
+                        <img src="image/Set5/5_1.jpg" alt="Product 5 - Image 1">
+                </div>
+                    <h2>KIT Mini PC Intel</h2>
+                    <p>ฟรี สายชาร์จและฐานวางเครื่อง</p>
+                    <button class="price-button" onclick="goToCheckout(1800)">ราคา: ฿8,700.-</button>
+                </div>
+            </a>
+            <!-- Product 6 -->
+            <a href="checkout.html" style="text-decoration: none;">
+                <div class="product" style="width: 350px;height: 400px;">
+                    <div class="image-slider">
+                        <img src="image/Set6/6_1.png" alt="Product 6 - Image 1">
+                </div>
+                    <h2>Mini PC MSI Cubi N</h2>
+                    <p>ฟรี Vesa mountable, External Power Switch</p>
+                    <button class="price-button" onclick="goToCheckout(2200)">ราคา: ฿11,900.-</button>
+                </div>
+            </a>    
+        </div>
+        <!-- Row 3 -->
+        <div class="product-row" style="align-items: center; justify-content: center;">
+            <!-- Product 7 -->
+            <a href="checkout.html" style="text-decoration: none;">
+                <div class="product" style="width: 350px;height: 400px;">
+                    <div class="image-slider">
+                        <img src="image/Set7/7_1.png" alt="Product 7 - Image 1">
+                </div>
+                    <h2>AIO Acer Aspire </h2>
+                    <p>ฟรี Wireless Keyboard & Mouse</p>
+                    <button class="price-button" onclick="goToCheckout(1400)">ราคา: ฿11,900.-</button>
+                </div>
+            </a>    
+            <!-- Product 8 -->
+            <a href="checkout.html" style="text-decoration: none;">
+                <div class="product" style="width: 350px;height: 400px;">
+                    <div class="image-slider">
+                        <img src="image/Set8/8_1.png" alt="Product 8 - Image 1">
+                </div>
+                    <h2>AIO Asus V222GAK</h2>
+                    <p>ฟรี USB Keyboard & Mouse ในกล่อง</p>
+                    <button button class="price-button" onclick="goToCheckout(1600)">ราคา: ฿13,990.-</button>
+                </div>
+            </a>    
+            <!-- Product 9 -->
+            <a href="checkout.html" style="text-decoration: none;">
+                <div class="product" style="width: 350px;height: 400px;">
+                    <div class="image-slider">
+                        <img src="image/Set9/9_1.png" alt="Product 9 - Image 1">
+                </div>
+                    <h2>AIO Lenovo IdeaCentre3 </h2>
+                    <p>ฟรี USB Keyboard & Mouse งบราคา 17000</p>
+                    <button class="price-button" onclick="goToCheckout(1200)">ราคา: ฿11,900.-</button>
+                </div>
+            </a>    
+        </div>
+    </div>
+</main>
+<!-- จบส่วนสินค้า -->
+        <!-- ส่วนท้าย -->
+        <footer>
+            <p>จัดทำโดย Autsadayut</p>
+        </footer>
+        <!-- จบส่วนท้าย -->
+    </div>
+    <script src="script/cart.js"></script>
+</body>
+</html>
